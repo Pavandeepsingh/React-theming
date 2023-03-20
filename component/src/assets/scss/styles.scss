@@ -1,0 +1,131 @@
+@import "color-palette";
+@import "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+body {
+  @include theme-aware("background", "color-background");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  @include theme-aware("background", "color-background");
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+  border: 1px solid;
+  cursor: pointer;
+  @include theme-aware("border-color", "color-border-color");
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+  @include theme-aware("border-color", "color-border-color");
+  border: 1px solid;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
+}
+
+.fa-moon:before {
+  content: "\f186";
+}
+
+.fa-sun:before {
+  content: "\f185";
+}
+
+.fa,
+.fas {
+  font-weight: 900;
+}
+
+.title {
+  @include theme-aware("color", "color-text");
+}
+
+.container {
+  width: calc(100% - 2vw);
+  height: 50vh;
+  border: 1px solid;
+  position: relative;
+  background-color: #fff;
+  border-width: 0;
+  border-style: solid;
+  @include theme-aware("background", "color-container");
+  padding: 10px 10px ;
+  // box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  margin-top: 30px;
+}
+
+.iconCss {
+  width: 150px;
+  height: 55px;
+  cursor: pointer;
+  background-color: white;
+  margin: 10px 0px;
+  box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #efefef;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1 {
+  margin: 0px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 29px;
+}

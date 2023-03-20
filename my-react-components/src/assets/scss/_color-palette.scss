@@ -1,0 +1,16 @@
+$themes: (
+    light: (
+        color-background: #dee0e8,
+        color-text: #45505b,
+        color-border: #343434,
+        color-container: #fefefe,
+        color-icon-filter: invert(0%) sepia(100%) saturate(15%) hue-rotate(246deg) brightness(105%) contrast(105%)
+    ),
+    dark: (
+        color-background: #49565c,
+        color-text: #fff,
+        color-border: #f1f1f1,
+        color-container: #3b3c36,
+        color-icon-filter: invert(98%) sepia(6%) saturate(0%) hue-rotate(360deg) brightness(105%) contrast(101%)
+    )
+);
