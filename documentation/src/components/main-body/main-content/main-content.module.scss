@@ -12,19 +12,29 @@
 
 .main_container {
   min-width: 300px;
-  min-height: 300px;
+  min-height: 100px;
 
   $num-colors: 100;
-  $base-color: #996B4D;
+  $base-color: #996b4d;
   $spectrum: 360deg;
-  $offset:50deg;
+  $offset: 50deg;
   @for $i from 0 to $num-colors {
     &:nth-child(#{$i}) {
       @include random-bgr();
     }
   }
 
-  
   margin-bottom: 40px;
-  box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+  // box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.arrow-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
+  transform: rotate(-90deg);
 }

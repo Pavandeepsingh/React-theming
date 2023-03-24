@@ -21,66 +21,6 @@ const componentList = [
     id: 4,
     name: "input",
     active: false,
-  },
-  {
-    id: 11,
-    name: "button",
-    active: false,
-  },
-  {
-    id: 12,
-    name: "svg icon",
-    active: false,
-  },
-  {
-    id: 13,
-    name: "checkbox",
-    active: false,
-  },
-  {
-    id: 14,
-    name: "input",
-    active: false,
-  },
-  {
-    id: 111,
-    name: "button",
-    active: false,
-  },
-  {
-    id: 112,
-    name: "svg icon",
-    active: false,
-  },
-  {
-    id: 113,
-    name: "checkbox",
-    active: false,
-  },
-  {
-    id: 114,
-    name: "input",
-    active: false,
-  },
-  {
-    id: 1111,
-    name: "button",
-    active: false,
-  },
-  {
-    id: 1112,
-    name: "svg icon",
-    active: false,
-  },
-  {
-    id: 1113,
-    name: "checkbox",
-    active: false,
-  },
-  {
-    id: 1114,
-    name: "input",
-    active: false,
   }
 ];
 
