@@ -1,0 +1,32 @@
+.pannel {
+  width: 280px;
+  height: calc(91vh - 3px);
+  background-color: white;
+  margin-top: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  .menu {
+    height: 50px;
+    border-bottom: 1px solid rgb(120, 96, 96);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 14px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+
+    .name {
+      display: flex;
+      align-items: center;
+    }
+    
+    .iconCss {
+        margin-right: 25px;
+    }
+
+    &.active {
+       border-left: 4px solid orange;
+    }
+  }
+}
